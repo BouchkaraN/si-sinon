@@ -1,0 +1,129 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+
+.cardHeader {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 1.25rem; padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.badge {
+  width: 34px; height: 34px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; flex-shrink: 0;
+}
+.badge_blue   { background: var(--blue-bg);   color: var(--blue-text); }
+.badge_green  { background: var(--green-bg);  color: var(--green-text); }
+.badge_orange { background: var(--orange-bg); color: var(--orange-text); }
+.badge_red    { background: var(--red-bg);    color: var(--red-text); }
+
+.cardTitle { font-size: 17px; font-weight: 600; color: var(--text); }
+.cardSub   { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+.sectionLabel {
+  font-size: 10px; font-weight: 700; letter-spacing: .6px;
+  text-transform: uppercase; color: var(--text3);
+  margin-top: 1rem; margin-bottom: .5rem;
+}
+
+/* CODE */
+.codeBlock {
+  background: #1e1e2e;
+  border-radius: var(--radius);
+  padding: .875rem 1.125rem;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 2;
+  overflow-x: auto;
+  margin: .75rem 0;
+  color: #cdd6f4;
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+/* INFO BOXES */
+.infoBox {
+  border-radius: var(--radius);
+  padding: 1rem 1.125rem;
+  margin: .75rem 0;
+  border-left: 3px solid transparent;
+}
+.box_blue   { background: var(--blue-bg);   border-left-color: var(--blue); }
+.box_green  { background: var(--green-bg);  border-left-color: var(--green); }
+.box_orange { background: var(--orange-bg); border-left-color: var(--orange); }
+.box_red    { background: var(--red-bg);    border-left-color: var(--red); }
+
+.boxLabel {
+  font-size: 10px; font-weight: 700; letter-spacing: .6px;
+  text-transform: uppercase; margin-bottom: .4rem;
+}
+.label_blue   { color: var(--blue-text); }
+.label_green  { color: var(--green-text); }
+.label_orange { color: var(--orange-text); }
+.label_red    { color: var(--red-text); }
+
+.boxContent { font-size: 13px; line-height: 1.75; color: var(--text); }
+
+/* GRID */
+.grid2 {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px; margin: .75rem 0;
+}
+@media (max-width: 560px) { .grid2 { grid-template-columns: 1fr; } }
+
+.gridItem {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+.gridLabel {
+  font-size: 10px; font-weight: 700; letter-spacing: .6px;
+  text-transform: uppercase; color: var(--text3);
+  margin-bottom: .5rem;
+}
+
+/* OBJ LIST */
+.objList { list-style: none; }
+.objItem {
+  display: flex; gap: 8px; align-items: flex-start;
+  padding: .4rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px; color: var(--text2); line-height: 1.6;
+}
+.objItem:last-child { border-bottom: none; }
+.objIcon { font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+.icon_check { color: var(--green-text); }
+.icon_cross { color: var(--red-text); }
+.icon_arrow { color: var(--blue-text); }
+
+/* STEPPER */
+.stepper { display: flex; flex-direction: column; }
+.stepItem {
+  display: flex; gap: 12px; padding: .75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.stepItem:last-child { border-bottom: none; }
+.stepNum {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--blue-bg); color: var(--blue-text);
+  font-size: 12px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.stepBody { flex: 1; }
+.stepTitle { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: .2rem; }
+.stepDesc  { font-size: 12px; color: var(--text2); line-height: 1.65; }
+
+/* TAG */
+.tag {
+  display: inline-block; padding: 2px 9px; border-radius: 20px;
+  font-size: 10px; font-weight: 700; letter-spacing: .4px;
+  margin-left: 8px; vertical-align: middle; text-transform: uppercase;
+}
+.tag_green { background: var(--green-bg); color: var(--green-text); }
+.tag_blue  { background: var(--blue-bg);  color: var(--blue-text); }

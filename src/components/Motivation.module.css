@@ -1,0 +1,8 @@
+.situImg {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  display: block;
+  border: 1px solid var(--border2);
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,.10);
+}
